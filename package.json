@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "cross-env NODE_ENV=production npm run start --prefix backend"
-  },
+  "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+  "start": "NODE_ENV=production node backend/src/server.js"
+},
+
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "cross-env": "^10.0.0"
+  }
 }
